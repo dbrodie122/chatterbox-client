@@ -10,9 +10,14 @@ body {
     margin: auto;
     text-align: left;
     background: white;
-    padding: 50px 60px;
+    padding: 20px 60px;
     border: solid #ddd;
     border-width: 0 1px 1px 1px;
+
+}
+#chats {
+    overflow-y: scroll; 
+    height: 300px;  
 }
 
 #main h1 {
@@ -20,6 +25,7 @@ body {
     font-size: 35px;
     margin-bottom: 5px;
     padding: 5px;
+    text-decoration: underline;
 }
 
 #main h1 span {
@@ -58,6 +64,10 @@ form input[type=text] {
     font-size: 12px;
     padding: 5px;
 }
+h4 {
+    text-decoration: underline;
+    margin-top: 0px;
+}
 
 .chat {
     padding: 5px;
@@ -86,5 +96,9 @@ form input[type=text] {
 .friend {
     color: #fff;
     background-color: #0090da;
+    border: 5px solid #0090da;
+    border-radius: 10px;
+    height: 100px;
+    overflow-y: scroll;
 }
 

@@ -7,6 +7,7 @@
 
     <!-- dependencies -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
     <script>
       // YOU DO NOT NEED TO EDIT THIS CODE
       if (!/(&|\?)username=/.test(window.location.search)) {
@@ -26,7 +27,46 @@
     <div id="main">
       <h1>chatterbox</h1>
       <!-- Your HTML goes here! -->
+      <div>
+            <form>
+               <fieldset>
+                  <legend>Chatrooms</legend>
+                  <p>
+                     <label>Select room</label>
+                     <select id = "roomSelect">
+                      <!--  <option value = "1">one</option>
+                       <option value = "2">two</option> -->
+                     </select>
+                     Or create a new room:<br>
+                     <input id="room" type="text" name="roomname">
+                     <input type="button" value="Create">
+                  </p>
+               </fieldset>
+            </form>
+      </div>
+      <div class="friend">
+        <ul>My Friends</ul>
+      </div>
+      <div id="message">
+          Enter Message:<br>
+          <input type="text" name="enterMessage">
+          <input type="submit" value="Send">
+      </div>
     </div>
     <div id="chats"></div>
   </body>
 </html>
+
+<!-- 
+[] Connect submit button to send message.
+[] Create message object with correct properties
+[] Refresh feed continuously or with button
+[] Filter messages based on roomname
+[] Allow user to create rooms
+[] After adding user to friends, display friends' messages in bold
+[] Allow user to select a username on init();
+[]
+[]
+[]
+[] 
+-->
